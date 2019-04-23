@@ -1,8 +1,62 @@
 import ZCDataTable from './components/ZCDataTable'
-import hello from './components/hello'
-import hello2 from './components/hello2'
 
-// plugin.js
+
+import zcbirthdaydate from '~/components/zcbirthdaydate.vue'
+import zccep from '~/components/zccep.vue'
+import zccheckbox from '~/components/zccheckbox.vue'
+import zccnpj from '~/components/zccnpj.vue'
+import zccolor from '~/components/zccolor.vue'
+import zccombobox from '~/components/zccombobox.vue'
+import zccomboboxserver from '~/components/zccomboboxserver.vue'
+import zccpf from '~/components/zccpf.vue'
+import zccpfcnpj from '~/components/zccpfcnpj.vue'
+import zcdate from '~/components/zcdate.vue'
+import zcdatetime from '~/components/zcdatetime.vue'
+import zcemail from '~/components/zcemail.vue'
+import zcemailconfirmation from '~/components/zcemailconfirmation.vue'
+import zcfile from '~/components/zcfile.vue'
+import zcmoney from '~/components/zcmoney.vue'
+import zcnumber from '~/components/zcnumber.vue'
+import zcpassword from '~/components/zcpassword.vue'
+import zcpasswordconfirmation from '~/components/zcpasswordconfirmation.vue'
+import zcphone from '~/components/zcphone.vue'
+import zcselect from '~/components/zcselect.vue'
+import zcslider from '~/components/zcslider.vue'
+import zcstring from '~/components/zcstring.vue'
+import zcswitch from '~/components/zcswitch.vue'
+import zctextarea from '~/components/zctextarea.vue'
+import zctime from '~/components/zctime.vue'
+
+const components = {
+  ZCDataTable,
+
+
+  zcbirthdaydate,
+  zccep,
+  zccheckbox,
+  zccnpj,
+  zccolor,
+  zccombobox,
+  zccomboboxserver,
+  zccpf,
+  zccpfcnpj,
+  zcdate,
+  zcdatetime,
+  zcemail,
+  zcemailconfirmation,
+  zcfile,
+  zcmoney,
+  zcnumber,
+  zcpassword,
+  zcpasswordconfirmation,
+  zcphone,
+  zcselect,
+  zcslider,
+  zcstring,
+  zcswitch,
+  zctextarea,
+  zctime,
+}
 
 
 // This exports the plugin object.
@@ -13,9 +67,11 @@ export default {
     // Add or modify global methods or properties.
     //Vue.yourMethod = (value) => value
     // Add a component or directive to your plugin, so it will be installed globally to your project.
-    Vue.component('ZCDataTable', ZCDataTable)
-    Vue.component('hello', hello)
-    Vue.component('hello2', hello2)
+
+    Object.entries(components).forEach(([name, component]) => {
+      Vue.component(name, component)
+    })
+
     // Add `Vue.mixin()` to inject options to all components.
     // Vue.mixin({
     //   // Add component lifecycle hooks or properties.
