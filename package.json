@@ -1,6 +1,6 @@
 {
   "name": "zc.web.vuejs.core",
-  "version": "0.1.36",
+  "version": "0.1.37",
   "description": "A Vue.js project",
   "author": "Zdzislaw Kochanski <contato@zdzcode.com.br>",
   "main": "dist/lib/zc.web.vuejs.core.min.js",
@@ -16,6 +16,7 @@
     "build:docs": "node build/build.js"
   },
   "dependencies": {
+    "vee-validate": "^2.2.4",
     "vue": "^2.3.3",
     "vuetify": "^1.5.13"
   },
