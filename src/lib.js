@@ -2,7 +2,7 @@ import ZCDataTable from './components/ZCDataTable'
 
 
 import zcbirthdaydate from './components/ZCBirthdaydate.vue'
-import zccep from './components/ZCCep.vue.vue'
+import zccep from './components/ZCCep.vue'
 // import zccheckbox from './components/zccheckbox.vue'
 // import zccnpj from './components/zccnpj.vue'
 // import zccolor from './components/zccolor.vue'
