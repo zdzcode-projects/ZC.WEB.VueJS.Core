@@ -1,6 +1,6 @@
 {
   "name": "zc.web.vuejs.core",
-  "version": "0.1.29",
+  "version": "0.1.31",
   "description": "A Vue.js project",
   "author": "Zdzislaw Kochanski <contato@zdzcode.com.br>",
   "main": "dist/lib/zc.web.vuejs.core.min.js",
