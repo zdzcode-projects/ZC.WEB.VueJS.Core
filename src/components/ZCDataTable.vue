@@ -1,21 +1,21 @@
 <template>
-  <v-flex :class="$attrs.class">
-    <v-data-table
-      :headers="headers"
-      :items="list"
-      :pagination.sync="pagination"
-      :total-items="totalDesserts"
-      :loading="loading"
-      class="elevation-1"
-    >
-      <template v-slot:items="props">
-        <td v-for="(item, index) in headers" :key="index">{{getValue(props.item, item)}}</td>
-        <td class="justify-center layout px-0">
-          <v-icon small class="mr-2" @click="editItem(props.item)">edit</v-icon>
-        </td>
-      </template>
-    </v-data-table>
-  </v-flex>
+  <!-- <v-flex :class="$attrs.class"> -->
+  <v-data-table
+    :headers="headers"
+    :items="list"
+    :pagination.sync="pagination"
+    :total-items="totalDesserts"
+    :loading="loading"
+    class="elevation-1"
+  >
+    <template v-slot:items="props">
+      <td v-for="(item, index) in headers" :key="index">{{getValue(props.item, item)}}</td>
+      <td class="justify-center layout px-0">
+        <v-icon small class="mr-2" @click="editItem(props.item)">edit</v-icon>
+      </td>
+    </template>
+  </v-data-table>
+  <!-- </v-flex> -->
 </template>
 
 <script>

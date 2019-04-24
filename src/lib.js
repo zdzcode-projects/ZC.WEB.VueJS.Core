@@ -31,8 +31,8 @@ const components = {
   ZCDataTable,
 
 
-  zcbirthdaydate,
-  zccep,
+  //   zcbirthdaydate,
+  //   zccep,
   //   zccheckbox,
   //   zccnpj,
   //   zccolor,
