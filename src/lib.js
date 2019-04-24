@@ -9,7 +9,7 @@ import ZCColor from './components/ZCColor.vue'
 import ZCCombobox from './components/ZCCombobox.vue'
 import ZCComboboxserver from './components/ZCComboboxserver.vue'
 import ZCCpf from './components/ZCCpf.vue'
-import ZCCpfcnpj from './components/ZCCpfcnpj.vue'
+import ZCCpfCnpj from './components/ZCCpfCnpj.vue'
 import ZCDate from './components/ZCDate.vue'
 import ZCDatetime from './components/ZCDatetime.vue'
 import ZCEmail from './components/ZCEmail.vue'
@@ -38,7 +38,7 @@ const components = {
   ZCCombobox,
   ZCComboboxserver,
   ZCCpf,
-  ZCCpfcnpj,
+  ZCCpfCnpj,
   ZCDate,
   ZCDatetime,
   ZCEmail,
