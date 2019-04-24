@@ -1,6 +1,9 @@
 import ZCDataTable from './components/ZCDataTable'
 
 
+
+import ZCCpf from './components/ZCCpf.vue'
+
 import zcbirthdaydate from './components/ZCBirthdaydate.vue'
 import zccep from './components/ZCCep.vue'
 // import zccheckbox from './components/zccheckbox.vue'
@@ -30,7 +33,7 @@ import zccep from './components/ZCCep.vue'
 const components = {
   ZCDataTable,
 
-
+  ZCCpf,
   //   zcbirthdaydate,
   //   zccep,
   //   zccheckbox,
