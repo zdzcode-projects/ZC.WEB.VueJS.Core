@@ -1,66 +1,60 @@
 import ZCDataTable from './components/ZCDataTable'
 
 
-
+import ZCBirthdaydate from './components/ZCBirthdaydate.vue'
+import ZCCep from './components/ZCCep.vue'
+import ZCCheckbox from './components/ZCCheckbox.vue'
+import ZCCnpj from './components/ZCCnpj.vue'
+import ZCColor from './components/ZCColor.vue'
+import ZCCombobox from './components/ZCCombobox.vue'
+import ZCComboboxserver from './components/ZCComboboxserver.vue'
 import ZCCpf from './components/ZCCpf.vue'
+import ZCCpfcnpj from './components/ZCCpfcnpj.vue'
+import ZCDate from './components/ZCDate.vue'
+import ZCDatetime from './components/ZCDatetime.vue'
+import ZCEmail from './components/ZCEmail.vue'
+import ZCEmailConfirmation from './components/ZCEmailConfirmation.vue'
+import ZCFile from './components/ZCFile.vue'
+import ZCMoney from './components/ZCMoney.vue'
+import ZCNumber from './components/ZCNumber.vue'
 import ZCPassword from './components/ZCPassword.vue'
-
-import zcbirthdaydate from './components/ZCBirthdaydate.vue'
-import zccep from './components/ZCCep.vue'
-// import zccheckbox from './components/zccheckbox.vue'
-// import zccnpj from './components/zccnpj.vue'
-// import zccolor from './components/zccolor.vue'
-// import zccombobox from './components/zccombobox.vue'
-// import zccomboboxserver from './components/zccomboboxserver.vue'
-// import zccpf from './components/zccpf.vue'
-// import zccpfcnpj from './components/zccpfcnpj.vue'
-// import zcdate from './components/zcdate.vue'
-// import zcdatetime from './components/zcdatetime.vue'
-// import zcemail from './components/zcemail.vue'
-// import zcemailconfirmation from './components/zcemailconfirmation.vue'
-// import zcfile from './components/zcfile.vue'
-// import zcmoney from './components/zcmoney.vue'
-// import zcnumber from './components/zcnumber.vue'
-// import zcpassword from './components/zcpassword.vue'
-// import zcpasswordconfirmation from './components/zcpasswordconfirmation.vue'
-// import zcphone from './components/zcphone.vue'
-// import zcselect from './components/zcselect.vue'
-// import zcslider from './components/zcslider.vue'
-// import zcstring from './components/ZCString.vuezcstring.vue'
-// import zcswitch from './components/zcswitch.vue'
-// import zctextarea from './components/zctextarea.vue'
-// import zctime from './components/zctime.vue'
+import ZCPasswordConfirmation from './components/ZCPasswordConfirmation.vue'
+import ZCPhone from './components/ZCPhone.vue'
+import ZCSelect from './components/ZCSelect.vue'
+import ZCSlider from './components/ZCSlider.vue'
+import ZCString from './components/ZCString.vue'
+import ZCSwitch from './components/ZCSwitch.vue'
+import ZCTextarea from './components/ZCTextarea.vue'
+import ZCTime from './components/ZCTime.vue'
 
 const components = {
   ZCDataTable,
 
+  ZCBirthdaydate,
+  ZCCep,
+  ZCCheckbox,
+  ZCCnpj,
+  ZCColor,
+  ZCCombobox,
+  ZCComboboxserver,
   ZCCpf,
+  ZCCpfcnpj,
+  ZCDate,
+  ZCDatetime,
+  ZCEmail,
+  ZCEmailConfirmation,
+  ZCFile,
+  ZCMoney,
+  ZCNumber,
   ZCPassword,
-  //   zcbirthdaydate,
-  //   zccep,
-  //   zccheckbox,
-  //   zccnpj,
-  //   zccolor,
-  //   zccombobox,
-  //   zccomboboxserver,
-  //   zccpf,
-  //   zccpfcnpj,
-  //   zcdate,
-  //   zcdatetime,
-  //   zcemail,
-  //   zcemailconfirmation,
-  //   zcfile,
-  //   zcmoney,
-  //   zcnumber,
-  //   zcpassword,
-  //   zcpasswordconfirmation,
-  //   zcphone,
-  //   zcselect,
-  //   zcslider,
-  //   zcstring,
-  //   zcswitch,
-  //   zctextarea,
-  //   zctime,
+  ZCPasswordConfirmation,
+  ZCPhone,
+  ZCSelect,
+  ZCSlider,
+  ZCString,
+  ZCSwitch,
+  ZCTextarea,
+  ZCTime,
 }
 
 
