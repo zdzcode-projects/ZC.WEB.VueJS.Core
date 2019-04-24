@@ -58,6 +58,71 @@ const components = {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+import VeeValidate from "vee-validate";
+const config = {
+  aria: true,
+  classNames: {
+
+  },
+  classes: false,
+  delay: 0,
+  dictionary: {
+    en: {
+      messages: {
+        required: () => 'Campo obrigatório',
+        digits: (field, [length]) => `O campo deve ter exatamente ${length} digitos.`,
+        min: (field, [length]) => `O campo deve ter pelo menos ${length} caracteres.`,
+        regex: () => 'Formato inválido.',
+        date_format: () => 'Data inválida.',
+        email: () => 'E-mail inválido.',
+        confirmed: (field) => 'Os valores dos campos não coincidem.'
+      }
+    },
+    pt: {
+      messages: {
+        required: () => 'Campo obrigatório',
+        digits: (field, [length]) => `O campo deve ter exatamente ${length} digitos.`,
+        min: (field, [length]) => `O campo deve ter pelo menos ${length} caracteres.`,
+        regex: () => 'Formato inválido.',
+        date_format: () => 'Data inválida.',
+        email: () => 'E-mail inválido.',
+        confirmed: (field) => 'Os valores dos campos não coincidem.'
+      }
+    }
+  },
+  fastExit: true,
+  errorBagName: 'errors', // change if property conflicts
+  events: 'blur',
+  fieldsBagName: 'fields',
+  i18n: null, // the vue-i18n plugin instance
+  i18nRootKey: 'validations', // the nested key under which the validation messages will be located
+  inject: true,
+  locale: 'en',
+  strict: true,
+  validity: false,
+};
+
+
+
+
+
+
+
+
 // This exports the plugin object.
 export default {
   // The install method will be called with the Vue constructor as         
@@ -66,6 +131,8 @@ export default {
     // Add or modify global methods or properties.
     //Vue.yourMethod = (value) => value
     // Add a component or directive to your plugin, so it will be installed globally to your project.
+
+    Vue.use(VeeValidate, config);
 
     Object.entries(components).forEach(([name, component]) => {
       Vue.component(name, component)
