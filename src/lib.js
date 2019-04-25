@@ -132,7 +132,17 @@ export default {
     //Vue.yourMethod = (value) => value
     // Add a component or directive to your plugin, so it will be installed globally to your project.
 
-    Vue.use(VeeValidate, config);
+
+    // if (!!config && config.hasOwnProperty(veeValidateConfig))
+    // {
+
+    // }
+    // else
+    // {
+
+    // }
+
+    //Vue.use(VeeValidate, config);
 
     Object.entries(components).forEach(([name, component]) => {
       Vue.component(name, component)
