@@ -57,21 +57,6 @@ const components = {
   ZCTime,
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 import VeeValidate from "vee-validate";
 
 // This exports the plugin object.

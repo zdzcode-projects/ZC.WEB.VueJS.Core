@@ -1,14 +1,14 @@
 {
   "name": "zc.web.vuejs.core",
-  "version": "0.2.10",
+  "version": "0.2.11",
   "description": "A Vue.js project",
   "author": "Zdzislaw Kochanski <contato@zdzcode.com.br>",
   "private": false,
   "license": "MIT",
-  "main": "./dist/zc-web-vuejs-core.common.js ",
+  "main": "./dist/zcWebVuejsCore.common.js ",
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build --target lib --name zc-web-vuejs-core ./src/main.js",
+    "build": "vue-cli-service build --target lib --name zcWebVuejsCore ./src/main.js",
     "lint": "vue-cli-service lint",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
