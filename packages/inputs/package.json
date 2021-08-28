@@ -1,0 +1,31 @@
+{
+  "name": "@zdzcode/zc-web-vuejs-core",
+  "version": "0.7.10",
+  "description": "Validators for Vuelidate",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "repository": {
+    "url": "https://github.com/vuelidate/vuelidate",
+    "type": "git",
+    "directory": "packages/inputs"
+  },
+  "license": "MIT",
+  "scripts": {
+    "build": "bili ./ --format esm --format cjs",
+    "dev": "yarn build --watch",
+    "test:unit": "jest",
+    "lint": "eslint src"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "bili": "^5.0.5",
+    "flush-promises": "^1.0.2"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "dist",
+    "index.d.ts"
+  ]
+}
