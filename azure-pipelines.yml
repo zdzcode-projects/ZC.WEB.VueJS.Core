@@ -1,0 +1,13 @@
+
+trigger:
+- master
+- main
+
+resources:
+  repositories:
+    - repository: zctemplates
+      type: git
+      name: ZDZCode Architecture and Infrastructure/_git/ZC.AzureDevOps.Script
+
+jobs:
+  - template: AzurePipelines/FrontendPackage/azure-pipelines.yml@zctemplates
