@@ -1,38 +1,57 @@
 {
   "name": "@zdzcode/zc-web-vuejs-core",
-  "version": "0.5.2",
+  "version": "0.7.2",
   "license": "MIT",
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  },
   "scripts": {
-    "serve": "vue-cli-service serve ./dev/main.js",
-    "build:demo": "vue-cli-service build --dest demo ./dev/main.js",
-    "build": "vue-cli-service build --target lib --name zdzcode src/plugin.js",
-    "build:local": "vue-cli-service build --target lib --name zdzcode src/plugin.js && npm pack",
+    "serve": "vue-cli-service serve ./dev/index.js",
+    "build:demo": "vue-cli-service build --dest demo ./dev/index.js",
+    "build": "vue-cli-service build --target lib --name zdzcode src/index.js",
+    "build:local": "vue-cli-service build --target lib --name zdzcode src/index.js && npm pack",
     "lint": "vue-cli-service lint --fix && vue-cli-service lint dev --fix",
-    "deploy:demo": "vue-cli-service build --dest demo ./dev/main.js && ./deploy.demo.sh"
+    "deploy:demo": "vue-cli-service build --dest demo ./dev/main.js && ./deploy.demo.sh",
+    "lerna:publish": "lerna publish --conventional-commits",
+    "lerna:publish:from-package": "lerna publish from-package",
+    "lerna:changed": "lerna changed",
+    "lerna:build": "lerna run build --parallel",
+    "lerna:version": "lerna version --conventional-commits",
+    "rollup:build": "rollup -c rollup.config.js"
   },
   "files": [
-    "dist"
+    "dist/"
   ],
-  "main": "./dist/zdzcode.common.js",
+  "main" : "./dist/zdzcode.common.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/zdzcode-projects/ZC.WEB.VueJS.Core"
   },
   "dependencies": {},
   "devDependencies": {
+    "@babel/core": "^7.15.0",
+    "@babel/plugin-transform-runtime": "^7.15.0",
+    "@babel/preset-env": "^7.15.0",
+    "@vue/compiler-sfc": "^3.2.6",
+    "bili": "^5.0.5",
+    "core-js": "^3.16.3",
+    "@nuxtjs/composition-api": "^0.27.0",
+    "@rollup/plugin-commonjs": "^20.0.0",
     "@vue/cli-service": "^4.5.13",
-    "core-js": "3.16.3",
-    "sass": "^1.38.1",
-    "sass-loader": "^12.1.0",
+    "@vuelidate/core": "^2.0.0-alpha.24",
+    "@vuelidate/validators": "^2.0.0-alpha.21",
+    "lerna": "^4.0.0",
+    "rollup": "^2.56.3",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-vue": "^6.0.0",
+    "sass": "~1.32.13",
+    "sass-loader": "^10.2.0",
     "vue": "2.6.14",
     "vue-cli-plugin-vuetify": "^2.4.2",
     "vue-template-compiler": "2.6.14",
-    "vuetify": "2.5.8",
+    "vuetify": "^2.5.3",
     "vuetify-loader": "^1.7.2"
-  },
-  "peerDependenciesMeta": {
-    "sass-loader": {
-      "optional": true
-    }
   }
 }

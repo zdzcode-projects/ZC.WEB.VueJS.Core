@@ -3,6 +3,8 @@
     <v-main>
       <app-bar :menu-items="mItems" />
       <v-container>
+        <zc-string label="String" validationRules="required" />
+
         <v-card outlined tile>
           <v-card-title class="font-weight-light">Test App Bar</v-card-title>
           <v-card-text>
@@ -10,11 +12,11 @@
             <v-checkbox v-model="mItems" label="Fake" :value="menuItems[1]"></v-checkbox>
           </v-card-text>
         </v-card>
-        <json-tree v-if="mItems" :data="mItems"></json-tree>
+        <!-- <json-tree v-if="mItems" :data="mItems"></json-tree> -->
       </v-container>
       <login-form @login="getLoginData" />
       <v-container>
-        <json-tree v-if="jsonEmitted" :data="jsonEmitted"></json-tree>
+        <!-- <json-tree v-if="jsonEmitted" :data="jsonEmitted"></json-tree> -->
       </v-container>
       <v-container>
         <v-card outlined tile>
